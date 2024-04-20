@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=eqge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Personal Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-wvfXpqpZZVQGKKGJlG1NCKMBhvlAh6g/z13GGmV9zAVzNGpFlAa8ahvIWRTSCEaA" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/70f1ce61b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-------<img src="images/logo.png" class="logo">------>
+                <div class="logo">PURVA</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                     <!-------<i class="fas fa-times"></i>-------->
+                </ul>
+              <!-------  <i class="fas fa-bars" onclick="closemenu()"></i>----->
+            </nav>
+            <div class="header-text" onclick="openmenu()">
+                <p> Web Devleoper</p>
+                <h1>Hi, I'm <span>Purva</span><br> From Gadhinglaj</h1>
+            </div>
+            <i class="fas fa-user-shield" style="float: right; margin-top: -180px; margin-right: 140px"></i>
+        </div>
+    </div>
+    <!-------------------------------------------About--------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-------<img src="images/user.png">------------------->
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>I'm Purva Gondhali, a web developer from Gadhinglaj, currently pursuing a B.Com in Information Technology. Passionate about blending commerce and technology, I specialize in HTML and CSS, using them as my creative canvas. Committed to crafting visually appealing and user-friendly websites, I merge academic knowledge with practical skills for a bright future in web development. Explore my portfolio to witness my dedication to creating meaningful online experiences.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education ')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>HTML, CSS, JavaScript, C, C++</li>
+                            <li><span>Libraries/Frameworks</span><br>VB.NET, ASP.NET</li>
+                            <li><span>Development Tools</span><br>Visual Studio Code, Visual Studio, Sublime Text, Turbo C++</li>
+                            <li><span>Databases</span><br>Microsoft Access</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Dr. Ghali College, Gadhinglaj</span><br>B.Com in Information Technology, June 2021 - July 2024<br>Percentage: 75.12%</li>
+                            <li><span>R.K. Junior College, Gadhinglaj</span><br>HSC in Vocational Courses (Accounting and Office Automation), June 2019 - May 2021<br>Percentage: 89.50%</li>
+                            <li><span>Symbiosis School Harali BK, Gadhinglaj</span><br>SSC, June 2013 - May 2019<br>Percentage: 73.80%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------------------- Services ---------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class= "services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Skilled in HTML, CSS, JavaScript, C/C++, VB.NET, ASP.NET, Microsoft Access, and development tools</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-cogs"></i> 
+                <h2>Frameworks and Libraries</h2>
+                <p>Skilled in utilizing VB.NET and ASP.NET frameworks for robust web applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-database"></i>
+                <h2>Database Management</h2>
+                <p>Expertise in designing and implementing databases using Microsoft Access for optimal data storage and retrieval.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------- Portfolio ---------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-crop"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-crop"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-crop"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!--------------------------------- Contact ---------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-envelope"></i> purvagondhali17@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 8767463948</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/syntax_seeker?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/purva-gondhali?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="IMAGES/purva.PDF" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Purva. All rights reserved.</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL ='https://script.google.com/macros/s/AKfycbx272prvVrb1D-z8sq11yznMCswZ4RK1hTrd-Xr4F4EHIG25tQgRCP5hZ0eh9zuMU7vDA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
